@@ -1,5 +1,5 @@
 //
-//  ILDViewController.h
+//  ILDPostViewController.h
 //  ILoveDog
 //
 //  Created by KIET NGUYEN on 4/2/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ILDViewController : UIViewController
+@interface ILDPostViewController : UINavigationController
 
 @end
