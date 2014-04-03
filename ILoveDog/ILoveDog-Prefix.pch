@@ -24,6 +24,9 @@
 #import "BaseViewController.h"
 #import "BaseTableViewCell.h"
 
+//Vendors
+#import <Parse/Parse.h>
+#import <FacebookSDK/FacebookSDK.h>
 
 // ViewControllers
 

@@ -15,7 +15,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    [self customAppUI];
+    // Register to use Parse Server
+    [Parse setApplicationId:@"FSSQUbrtVnAOzoP1v8D6TR8qeyglIXdc6ceNQbWO"
+                  clientKey:@"jjbXAWMlot8CW4WZMbS3I4XaHIyq5rOv91NsYiMm"];
+    // Track statistics around application opens
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    [self setupAppearance];
     
     self.splashScreenVC = [[ILDSplashScreenViewController alloc] initWithNib];
     self.window.rootViewController = self.splashScreenVC;
@@ -24,7 +30,7 @@
     return YES;
 }
 
-- (void)customAppUI
+- (void)setupAppearance
 {
     UIImage *navBkg = [UIImage imageNamed:@"navi_bar_full.png"];
     [[UINavigationBar appearance] setBackgroundImage:navBkg forBarMetrics:UIBarMetricsDefault];
@@ -34,11 +40,10 @@
 //    [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    
     [[UINavigationBar appearance] setTitleTextAttributes: @{
                                                             NSForegroundColorAttributeName: [UIColor whiteColor],
                                                             NSFontAttributeName: [UIFont fontWithName:FONT_HELVETICAL_REGULAR size:18.0f]
-                                                            }];
+                                                        }];
 }
 
 
