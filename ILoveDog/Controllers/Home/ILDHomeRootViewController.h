@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ILDHomeRootViewController : BaseViewController
+@interface ILDHomeRootViewController : BaseViewController<UITabBarDelegate, UITableViewDataSource>
 
 @end

@@ -20,6 +20,11 @@
 #define FONT_HELVETICAL_LIGHT  @"HelveticaNeue-Light"
 
 
-// ViewControllers
+// Base template clas
 #import "BaseViewController.h"
+#import "BaseTableViewCell.h"
+
+
+// ViewControllers
+
 
