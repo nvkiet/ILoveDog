@@ -8,6 +8,7 @@
 
 #import "ILDSplashScreenViewController.h"
 #import "ILDMainViewController.h"
+#import "ILDLoginViewController.h"
 
 @interface ILDSplashScreenViewController ()
 
@@ -33,8 +34,15 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    ILDMainViewController *mainVC = [[ILDMainViewController alloc] initWithNib];
-    [self presentViewController:mainVC animated:NO completion:nil];
+    // Check if user is cached and linked to Facebook, if so, bypass login
+    if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
+        ILDMainViewController *mainVC = [[ILDMainViewController alloc] initWithNib];
+        [self presentViewController:mainVC animated:NO completion:nil];
+    }
+    else {
+        ILDLoginViewController *loginVC = [[ILDLoginViewController alloc] initWithNib];
+        [self presentViewController:loginVC animated:NO completion:nil];
+    }
 }
 
 - (void)didReceiveMemoryWarning
