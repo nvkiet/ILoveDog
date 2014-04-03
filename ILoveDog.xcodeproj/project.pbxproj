@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E36DBD818ECEC30001A85DF /* ILDDogViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E36DBD718ECEC30001A85DF /* ILDDogViewCell.m */; };
-		2E36DBDA18ECEC41001A85DF /* ILDDogViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E36DBD918ECEC41001A85DF /* ILDDogViewCell.xib */; };
 		2E36DBDD18ECEDF9001A85DF /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E36DBDC18ECEDF9001A85DF /* BaseTableViewCell.m */; };
 		2E36DBEB18ECFAF9001A85DF /* anonymousUser.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E36DBE918ECFAF9001A85DF /* anonymousUser.png */; };
 		2E36DBEC18ECFAF9001A85DF /* anonymousUser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E36DBEA18ECFAF9001A85DF /* anonymousUser@2x.png */; };
+		2E36DBF218ED0C64001A85DF /* ILDDogViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E36DBF018ED0C64001A85DF /* ILDDogViewCell.m */; };
+		2E36DBF318ED0C64001A85DF /* ILDDogViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E36DBF118ED0C64001A85DF /* ILDDogViewCell.xib */; };
 		2E65618518EBB253000CF4DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E65618418EBB253000CF4DA /* Foundation.framework */; };
 		2E65618718EBB253000CF4DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E65618618EBB253000CF4DA /* CoreGraphics.framework */; };
 		2E65618918EBB253000CF4DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E65618818EBB253000CF4DA /* UIKit.framework */; };
@@ -62,13 +62,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E36DBD618ECEC30001A85DF /* ILDDogViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDDogViewCell.h; sourceTree = SOURCE_ROOT; };
-		2E36DBD718ECEC30001A85DF /* ILDDogViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDDogViewCell.m; sourceTree = SOURCE_ROOT; };
-		2E36DBD918ECEC41001A85DF /* ILDDogViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDDogViewCell.xib; sourceTree = SOURCE_ROOT; };
 		2E36DBDB18ECEDF9001A85DF /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		2E36DBDC18ECEDF9001A85DF /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		2E36DBE918ECFAF9001A85DF /* anonymousUser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anonymousUser.png; sourceTree = "<group>"; };
 		2E36DBEA18ECFAF9001A85DF /* anonymousUser@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anonymousUser@2x.png"; sourceTree = "<group>"; };
+		2E36DBEF18ED0C64001A85DF /* ILDDogViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDDogViewCell.h; sourceTree = "<group>"; };
+		2E36DBF018ED0C64001A85DF /* ILDDogViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDDogViewCell.m; sourceTree = "<group>"; };
+		2E36DBF118ED0C64001A85DF /* ILDDogViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDDogViewCell.xib; sourceTree = "<group>"; };
 		2E65618118EBB253000CF4DA /* ILoveDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ILoveDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E65618418EBB253000CF4DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2E65618618EBB253000CF4DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,6 +155,24 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		2E36DBED18ED0C64001A85DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E36DBEE18ED0C64001A85DF /* UITableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E36DBEE18ED0C64001A85DF /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				2E36DBEF18ED0C64001A85DF /* ILDDogViewCell.h */,
+				2E36DBF018ED0C64001A85DF /* ILDDogViewCell.m */,
+				2E36DBF118ED0C64001A85DF /* ILDDogViewCell.xib */,
+			);
+			path = UITableViewCells;
+			sourceTree = "<group>";
+		};
 		2E65617818EBB252000CF4DA = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +209,7 @@
 				2E65619318EBB253000CF4DA /* ILDAppDelegate.h */,
 				2E65619418EBB253000CF4DA /* ILDAppDelegate.m */,
 				2E6561B918EBB2CE000CF4DA /* Models */,
-				2E6561BA18EBB2DF000CF4DA /* Views */,
+				2E36DBED18ED0C64001A85DF /* Views */,
 				2E6561BC18EBB2E5000CF4DA /* Controllers */,
 				2E6561BD18EBB2EE000CF4DA /* Managers */,
 				2E6561C018EBB3AB000CF4DA /* Categories */,
@@ -238,24 +256,6 @@
 				2E6561C518EBB4B1000CF4DA /* SuperClass */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		2E6561BA18EBB2DF000CF4DA /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2E6561BB18EBB2DF000CF4DA /* UITableViewCells */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		2E6561BB18EBB2DF000CF4DA /* UITableViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				2E36DBD618ECEC30001A85DF /* ILDDogViewCell.h */,
-				2E36DBD718ECEC30001A85DF /* ILDDogViewCell.m */,
-				2E36DBD918ECEC41001A85DF /* ILDDogViewCell.xib */,
-			);
-			path = UITableViewCells;
 			sourceTree = "<group>";
 		};
 		2E6561BC18EBB2E5000CF4DA /* Controllers */ = {
@@ -530,7 +530,6 @@
 			files = (
 				2E65624418EC19F2000CF4DA /* post_tabbar@2x.png in Resources */,
 				2E36DBEC18ECFAF9001A85DF /* anonymousUser@2x.png in Resources */,
-				2E36DBDA18ECEC41001A85DF /* ILDDogViewCell.xib in Resources */,
 				E5C1133118EC4CD30084E3F9 /* ILDSplashScreenViewController.xib in Resources */,
 				2E65624A18EC1BC4000CF4DA /* tabbar.png in Resources */,
 				2E65619D18EBB253000CF4DA /* Images.xcassets in Resources */,
@@ -542,6 +541,7 @@
 				2E65624618EC19F2000CF4DA /* home_tabbar_active@2x.png in Resources */,
 				2E65624518EC19F2000CF4DA /* home_tabbar_active.png in Resources */,
 				2E65624B18EC1BC4000CF4DA /* tabbar@2x.png in Resources */,
+				2E36DBF318ED0C64001A85DF /* ILDDogViewCell.xib in Resources */,
 				2E36DBEB18ECFAF9001A85DF /* anonymousUser.png in Resources */,
 				2E65624718EC19F2000CF4DA /* home_tabbar.png in Resources */,
 				2E65618F18EBB253000CF4DA /* InfoPlist.strings in Resources */,
@@ -566,7 +566,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E36DBD818ECEC30001A85DF /* ILDDogViewCell.m in Sources */,
 				2E6561E218EBBDA6000CF4DA /* ILDPostRootViewController.m in Sources */,
 				2E6561CD18EBB735000CF4DA /* ILDMainViewController.m in Sources */,
 				E5C1133018EC4CD30084E3F9 /* ILDSplashScreenViewController.m in Sources */,
@@ -574,6 +573,7 @@
 				2E65619518EBB253000CF4DA /* ILDAppDelegate.m in Sources */,
 				2E65619118EBB253000CF4DA /* main.m in Sources */,
 				E5C1133E18EC5CAA0084E3F9 /* ILDListLikersViewController.m in Sources */,
+				2E36DBF218ED0C64001A85DF /* ILDDogViewCell.m in Sources */,
 				2E6561D518EBB7C5000CF4DA /* ILDHomeRootViewController.m in Sources */,
 				2E6561EA18EBBE2E000CF4DA /* ILDProfileRootViewController.m in Sources */,
 				2E6561E618EBBE12000CF4DA /* ILDProfileViewController.m in Sources */,
