@@ -34,8 +34,6 @@
         self  = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] lastObject];
         
         // Format cell
-        
-        
     }
     return self;
 }
@@ -50,9 +48,6 @@
 - (void)configureWithData:(id)model
 {
     
-    
-    
-    
 }
 
 + (CGFloat)getHeight
@@ -60,29 +55,5 @@
     return 400;
 }
 
-- (IBAction)moreClicked:(id)sender {
-    
-    // Show action sheet
-    
-    
-}
-
-
-- (IBAction)likeClicked:(id)sender {
-    
-    
-    
-}
-
-- (IBAction)commentClicked:(id)sender {
-    
-    
-}
-
-- (IBAction)shareClicked:(id)sender {
-    
-    // Show action sheet
-    
-}
 
 @end

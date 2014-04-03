@@ -1,19 +1,18 @@
 //
-//  ILDPostViewController.m
+//  ILDNotificaionRootViewController.m
 //  ILoveDog
 //
-//  Created by KIET NGUYEN on 4/2/14.
+//  Created by KIET NGUYEN on 4/3/14.
 //  Copyright (c) 2014 Kiet Nguyen. All rights reserved.
 //
 
-#import "ILDPostViewController.h"
-#import "ILDPostRootViewController.h"
+#import "ILDNotificaionRootViewController.h"
 
-@interface ILDPostViewController ()
+@interface ILDNotificaionRootViewController ()
 
 @end
 
-@implementation ILDPostViewController
+@implementation ILDNotificaionRootViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,9 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   
-    ILDPostRootViewController *rootVC = [[ILDPostRootViewController alloc] initWithNib];
-    [self pushViewController:rootVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

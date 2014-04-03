@@ -29,9 +29,9 @@
     UIImage *navBkg = [UIImage imageNamed:@"navi_bar_full.png"];
     [[UINavigationBar appearance] setBackgroundImage:navBkg forBarMetrics:UIBarMetricsDefault];
     
-    UIImage *tabbarBkg = [UIImage imageNamed:@"tabbar.png"];
-    [[UITabBar appearance] setBackgroundImage:tabbarBkg];
-    [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
+//    UIImage *tabbarBkg = [UIImage imageNamed:@"tabbar.png"];
+//    [[UITabBar appearance] setBackgroundImage:tabbarBkg];
+//    [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     

@@ -37,9 +37,6 @@
                         <state key="normal" title="...">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
-                        <connections>
-                            <action selector="moreClicked:" destination="j1m-rI-bKI" eventType="touchUpInside" id="J4l-28-oeu"/>
-                        </connections>
                     </button>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write a caption" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C5r-ed-qRT">
                         <rect key="frame" x="14" y="67" width="297" height="21"/>
@@ -82,10 +79,6 @@
                         <state key="normal" title="Comment">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
-                        <connections>
-                            <action selector="commentClicked:" destination="j1m-rI-bKI" eventType="touchUpInside" id="YrE-z2-dtA"/>
-                            <action selector="likeClicked:" destination="j1m-rI-bKI" eventType="touchUpInside" id="ilf-CM-Jk6"/>
-                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VeA-zO-6xD">
                         <rect key="frame" x="265" y="364" width="46" height="30"/>
@@ -93,9 +86,6 @@
                         <state key="normal" title="Share">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
-                        <connections>
-                            <action selector="shareClicked:" destination="j1m-rI-bKI" eventType="touchUpInside" id="veE-p2-IPg"/>
-                        </connections>
                     </button>
                 </subviews>
             </tableViewCellContentView>
@@ -104,7 +94,6 @@
                 <outlet property="captionLabel" destination="C5r-ed-qRT" id="SIg-Hp-ZjO"/>
                 <outlet property="commentsLabel" destination="Ku1-cv-iFc" id="VEV-Ge-wmB"/>
                 <outlet property="dogPicImageView" destination="uRR-00-oe1" id="VhF-WB-4Bf"/>
-                <outlet property="likeButton" destination="LJz-Ye-Jai" id="b3h-Kw-Uab"/>
                 <outlet property="likesLabel" destination="XoL-pl-tmw" id="7em-gJ-db9"/>
                 <outlet property="timeLabel" destination="4bl-Ir-3ih" id="WO9-Eh-670"/>
                 <outlet property="userNameLabel" destination="qr7-US-2DW" id="1dP-Vm-p2m"/>

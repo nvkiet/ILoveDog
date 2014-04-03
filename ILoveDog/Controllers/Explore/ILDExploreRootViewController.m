@@ -1,19 +1,18 @@
 //
-//  ILDPostViewController.m
+//  ILDExploreRootViewController.m
 //  ILoveDog
 //
-//  Created by KIET NGUYEN on 4/2/14.
+//  Created by KIET NGUYEN on 4/3/14.
 //  Copyright (c) 2014 Kiet Nguyen. All rights reserved.
 //
 
-#import "ILDPostViewController.h"
-#import "ILDPostRootViewController.h"
+#import "ILDExploreRootViewController.h"
 
-@interface ILDPostViewController ()
+@interface ILDExploreRootViewController ()
 
 @end
 
-@implementation ILDPostViewController
+@implementation ILDExploreRootViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,9 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   
-    ILDPostRootViewController *rootVC = [[ILDPostRootViewController alloc] initWithNib];
-    [self pushViewController:rootVC animated:YES];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning
