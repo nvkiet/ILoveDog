@@ -12,10 +12,8 @@
 		2E36DBEC18ECFAF9001A85DF /* anonymousUser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E36DBEA18ECFAF9001A85DF /* anonymousUser@2x.png */; };
 		2E36DBF218ED0C64001A85DF /* ILDDogViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E36DBF018ED0C64001A85DF /* ILDDogViewCell.m */; };
 		2E36DBF318ED0C64001A85DF /* ILDDogViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E36DBF118ED0C64001A85DF /* ILDDogViewCell.xib */; };
-		2E36DBF818ED4662001A85DF /* ILDExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E36DBF718ED4662001A85DF /* ILDExploreViewController.m */; };
 		2E36DBFC18ED4684001A85DF /* ILDExploreRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E36DBFA18ED4684001A85DF /* ILDExploreRootViewController.m */; };
 		2E36DBFD18ED4684001A85DF /* ILDExploreRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E36DBFB18ED4684001A85DF /* ILDExploreRootViewController.xib */; };
-		2E36DC0018ED4765001A85DF /* ILDNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E36DBFF18ED4765001A85DF /* ILDNotificationViewController.m */; };
 		2E36DC0418ED479C001A85DF /* ILDNotificaionRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E36DC0218ED479C001A85DF /* ILDNotificaionRootViewController.m */; };
 		2E36DC0518ED479C001A85DF /* ILDNotificaionRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E36DC0318ED479C001A85DF /* ILDNotificaionRootViewController.xib */; };
 		2E36DC0F18ED4CFB001A85DF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E36DC0E18ED4CFB001A85DF /* libz.dylib */; };
@@ -33,6 +31,7 @@
 		2E3BE5FF18EE689D001E4EAA /* AppIcon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E3BE5FC18EE689D001E4EAA /* AppIcon57x57.png */; };
 		2E3BE60018EE689D001E4EAA /* AppIcon57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E3BE5FD18EE689D001E4EAA /* AppIcon57x57@2x.png */; };
 		2E3BE60118EE689D001E4EAA /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E3BE5FE18EE689D001E4EAA /* AppIcon60x60@2x.png */; };
+		2E3BE60918EEC6A1001E4EAA /* ILDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3BE60818EEC6A1001E4EAA /* ILDRootViewController.m */; };
 		2E65618518EBB253000CF4DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E65618418EBB253000CF4DA /* Foundation.framework */; };
 		2E65618918EBB253000CF4DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E65618818EBB253000CF4DA /* UIKit.framework */; };
 		2E65618F18EBB253000CF4DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E65618D18EBB253000CF4DA /* InfoPlist.strings */; };
@@ -44,16 +43,11 @@
 		2E6561A618EBB253000CF4DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E65618818EBB253000CF4DA /* UIKit.framework */; };
 		2E6561AE18EBB253000CF4DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E6561AC18EBB253000CF4DA /* InfoPlist.strings */; };
 		2E6561B018EBB253000CF4DA /* ILoveDogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6561AF18EBB253000CF4DA /* ILoveDogTests.m */; };
-		2E6561CD18EBB735000CF4DA /* ILDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6561CB18EBB735000CF4DA /* ILDMainViewController.m */; };
-		2E6561CE18EBB735000CF4DA /* ILDMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6561CC18EBB735000CF4DA /* ILDMainViewController.xib */; };
-		2E6561D118EBB7A3000CF4DA /* ILDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6561D018EBB7A3000CF4DA /* ILDHomeViewController.m */; };
 		2E6561D518EBB7C5000CF4DA /* ILDHomeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6561D318EBB7C5000CF4DA /* ILDHomeRootViewController.m */; };
 		2E6561D618EBB7C5000CF4DA /* ILDHomeRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6561D418EBB7C5000CF4DA /* ILDHomeRootViewController.xib */; };
 		2E6561D918EBB90B000CF4DA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6561D818EBB90B000CF4DA /* BaseViewController.m */; };
-		2E6561DE18EBBD63000CF4DA /* ILDPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6561DD18EBBD63000CF4DA /* ILDPostViewController.m */; };
 		2E6561E218EBBDA6000CF4DA /* ILDPostRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6561E018EBBDA6000CF4DA /* ILDPostRootViewController.m */; };
 		2E6561E318EBBDA6000CF4DA /* ILDPostRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6561E118EBBDA6000CF4DA /* ILDPostRootViewController.xib */; };
-		2E6561E618EBBE12000CF4DA /* ILDProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6561E518EBBE12000CF4DA /* ILDProfileViewController.m */; };
 		2E6561EA18EBBE2E000CF4DA /* ILDProfileRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6561E818EBBE2E000CF4DA /* ILDProfileRootViewController.m */; };
 		2E65624218EC19F2000CF4DA /* home_tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E65623C18EC19F2000CF4DA /* home_tabbar@2x.png */; };
 		2E65624318EC19F2000CF4DA /* post_tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E65623D18EC19F2000CF4DA /* post_tabbar.png */; };
@@ -88,13 +82,9 @@
 		2E36DBEF18ED0C64001A85DF /* ILDDogViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDDogViewCell.h; sourceTree = "<group>"; };
 		2E36DBF018ED0C64001A85DF /* ILDDogViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDDogViewCell.m; sourceTree = "<group>"; };
 		2E36DBF118ED0C64001A85DF /* ILDDogViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDDogViewCell.xib; sourceTree = "<group>"; };
-		2E36DBF618ED4662001A85DF /* ILDExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDExploreViewController.h; sourceTree = "<group>"; };
-		2E36DBF718ED4662001A85DF /* ILDExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDExploreViewController.m; sourceTree = "<group>"; };
 		2E36DBF918ED4684001A85DF /* ILDExploreRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDExploreRootViewController.h; sourceTree = "<group>"; };
 		2E36DBFA18ED4684001A85DF /* ILDExploreRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDExploreRootViewController.m; sourceTree = "<group>"; };
 		2E36DBFB18ED4684001A85DF /* ILDExploreRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDExploreRootViewController.xib; sourceTree = "<group>"; };
-		2E36DBFE18ED4765001A85DF /* ILDNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDNotificationViewController.h; sourceTree = "<group>"; };
-		2E36DBFF18ED4765001A85DF /* ILDNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDNotificationViewController.m; sourceTree = "<group>"; };
 		2E36DC0118ED479C001A85DF /* ILDNotificaionRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDNotificaionRootViewController.h; sourceTree = "<group>"; };
 		2E36DC0218ED479C001A85DF /* ILDNotificaionRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDNotificaionRootViewController.m; sourceTree = "<group>"; };
 		2E36DC0318ED479C001A85DF /* ILDNotificaionRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDNotificaionRootViewController.xib; sourceTree = "<group>"; };
@@ -114,6 +104,8 @@
 		2E3BE5FC18EE689D001E4EAA /* AppIcon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon57x57.png; sourceTree = "<group>"; };
 		2E3BE5FD18EE689D001E4EAA /* AppIcon57x57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon57x57@2x.png"; sourceTree = "<group>"; };
 		2E3BE5FE18EE689D001E4EAA /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@2x.png"; sourceTree = "<group>"; };
+		2E3BE60718EEC6A1001E4EAA /* ILDRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDRootViewController.h; sourceTree = "<group>"; };
+		2E3BE60818EEC6A1001E4EAA /* ILDRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDRootViewController.m; sourceTree = "<group>"; };
 		2E65618118EBB253000CF4DA /* ILoveDogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ILoveDogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E65618418EBB253000CF4DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2E65618818EBB253000CF4DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -129,23 +121,14 @@
 		2E6561AB18EBB253000CF4DA /* ILoveDogTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ILoveDogTests-Info.plist"; sourceTree = "<group>"; };
 		2E6561AD18EBB253000CF4DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E6561AF18EBB253000CF4DA /* ILoveDogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILoveDogTests.m; sourceTree = "<group>"; };
-		2E6561CA18EBB735000CF4DA /* ILDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDMainViewController.h; sourceTree = "<group>"; };
-		2E6561CB18EBB735000CF4DA /* ILDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDMainViewController.m; sourceTree = "<group>"; };
-		2E6561CC18EBB735000CF4DA /* ILDMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDMainViewController.xib; sourceTree = "<group>"; };
-		2E6561CF18EBB7A3000CF4DA /* ILDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDHomeViewController.h; sourceTree = "<group>"; };
-		2E6561D018EBB7A3000CF4DA /* ILDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDHomeViewController.m; sourceTree = "<group>"; };
 		2E6561D218EBB7C5000CF4DA /* ILDHomeRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDHomeRootViewController.h; sourceTree = "<group>"; };
 		2E6561D318EBB7C5000CF4DA /* ILDHomeRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDHomeRootViewController.m; sourceTree = "<group>"; };
 		2E6561D418EBB7C5000CF4DA /* ILDHomeRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDHomeRootViewController.xib; sourceTree = "<group>"; };
 		2E6561D718EBB90B000CF4DA /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		2E6561D818EBB90B000CF4DA /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		2E6561DC18EBBD63000CF4DA /* ILDPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDPostViewController.h; sourceTree = "<group>"; };
-		2E6561DD18EBBD63000CF4DA /* ILDPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDPostViewController.m; sourceTree = "<group>"; };
 		2E6561DF18EBBDA6000CF4DA /* ILDPostRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDPostRootViewController.h; sourceTree = "<group>"; };
 		2E6561E018EBBDA6000CF4DA /* ILDPostRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDPostRootViewController.m; sourceTree = "<group>"; };
 		2E6561E118EBBDA6000CF4DA /* ILDPostRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDPostRootViewController.xib; sourceTree = "<group>"; };
-		2E6561E418EBBE12000CF4DA /* ILDProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDProfileViewController.h; sourceTree = "<group>"; };
-		2E6561E518EBBE12000CF4DA /* ILDProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDProfileViewController.m; sourceTree = "<group>"; };
 		2E6561E718EBBE2E000CF4DA /* ILDProfileRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDProfileRootViewController.h; sourceTree = "<group>"; };
 		2E6561E818EBBE2E000CF4DA /* ILDProfileRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDProfileRootViewController.m; sourceTree = "<group>"; };
 		2E65623C18EC19F2000CF4DA /* home_tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_tabbar@2x.png"; sourceTree = "<group>"; };
@@ -220,8 +203,6 @@
 		2E36DBF418ED45D7001A85DF /* Explore */ = {
 			isa = PBXGroup;
 			children = (
-				2E36DBF618ED4662001A85DF /* ILDExploreViewController.h */,
-				2E36DBF718ED4662001A85DF /* ILDExploreViewController.m */,
 				2E36DBF918ED4684001A85DF /* ILDExploreRootViewController.h */,
 				2E36DBFA18ED4684001A85DF /* ILDExploreRootViewController.m */,
 				2E36DBFB18ED4684001A85DF /* ILDExploreRootViewController.xib */,
@@ -232,8 +213,6 @@
 		2E36DBF518ED45E1001A85DF /* Notificaion */ = {
 			isa = PBXGroup;
 			children = (
-				2E36DBFE18ED4765001A85DF /* ILDNotificationViewController.h */,
-				2E36DBFF18ED4765001A85DF /* ILDNotificationViewController.m */,
 				2E36DC0118ED479C001A85DF /* ILDNotificaionRootViewController.h */,
 				2E36DC0218ED479C001A85DF /* ILDNotificaionRootViewController.m */,
 				2E36DC0318ED479C001A85DF /* ILDNotificaionRootViewController.xib */,
@@ -282,6 +261,15 @@
 				2E3BE5FE18EE689D001E4EAA /* AppIcon60x60@2x.png */,
 			);
 			path = Logo;
+			sourceTree = "<group>";
+		};
+		2E3BE60618EEC691001E4EAA /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				2E3BE60718EEC6A1001E4EAA /* ILDRootViewController.h */,
+				2E3BE60818EEC6A1001E4EAA /* ILDRootViewController.m */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 		2E65617818EBB252000CF4DA = {
@@ -380,8 +368,8 @@
 				2E6561DA18EBBCA7000CF4DA /* Post */,
 				2E36DBF418ED45D7001A85DF /* Explore */,
 				2E6561C818EBB584000CF4DA /* Home */,
-				2E6561C918EBB719000CF4DA /* Main */,
 				2E3BE5E618EE414D001E4EAA /* Login */,
+				2E3BE60618EEC691001E4EAA /* Root */,
 				2E6561C718EBB524000CF4DA /* Tutorial */,
 			);
 			path = Controllers;
@@ -472,8 +460,6 @@
 		2E6561C818EBB584000CF4DA /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				2E6561CF18EBB7A3000CF4DA /* ILDHomeViewController.h */,
-				2E6561D018EBB7A3000CF4DA /* ILDHomeViewController.m */,
 				2E6561D218EBB7C5000CF4DA /* ILDHomeRootViewController.h */,
 				2E6561D318EBB7C5000CF4DA /* ILDHomeRootViewController.m */,
 				2E6561D418EBB7C5000CF4DA /* ILDHomeRootViewController.xib */,
@@ -484,21 +470,9 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		2E6561C918EBB719000CF4DA /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				2E6561CA18EBB735000CF4DA /* ILDMainViewController.h */,
-				2E6561CB18EBB735000CF4DA /* ILDMainViewController.m */,
-				2E6561CC18EBB735000CF4DA /* ILDMainViewController.xib */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		2E6561DA18EBBCA7000CF4DA /* Post */ = {
 			isa = PBXGroup;
 			children = (
-				2E6561DC18EBBD63000CF4DA /* ILDPostViewController.h */,
-				2E6561DD18EBBD63000CF4DA /* ILDPostViewController.m */,
 				2E6561DF18EBBDA6000CF4DA /* ILDPostRootViewController.h */,
 				2E6561E018EBBDA6000CF4DA /* ILDPostRootViewController.m */,
 				2E6561E118EBBDA6000CF4DA /* ILDPostRootViewController.xib */,
@@ -509,8 +483,6 @@
 		2E6561DB18EBBCAE000CF4DA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				2E6561E418EBBE12000CF4DA /* ILDProfileViewController.h */,
-				2E6561E518EBBE12000CF4DA /* ILDProfileViewController.m */,
 				2E6561E718EBBE2E000CF4DA /* ILDProfileRootViewController.h */,
 				2E6561E818EBBE2E000CF4DA /* ILDProfileRootViewController.m */,
 				E5C1132B18EC462B0084E3F9 /* ILDProfileRootViewController.xib */,
@@ -623,7 +595,6 @@
 				2E3BE60018EE689D001E4EAA /* AppIcon57x57@2x.png in Resources */,
 				2E65624218EC19F2000CF4DA /* home_tabbar@2x.png in Resources */,
 				2E3BE60118EE689D001E4EAA /* AppIcon60x60@2x.png in Resources */,
-				2E6561CE18EBB735000CF4DA /* ILDMainViewController.xib in Resources */,
 				E5C1132C18EC462B0084E3F9 /* ILDProfileRootViewController.xib in Resources */,
 				2E6561E318EBBDA6000CF4DA /* ILDPostRootViewController.xib in Resources */,
 				2E65624D18EC1D1C000CF4DA /* navi_bar_full.png in Resources */,
@@ -698,11 +669,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3BE60918EEC6A1001E4EAA /* ILDRootViewController.m in Sources */,
 				2E6561E218EBBDA6000CF4DA /* ILDPostRootViewController.m in Sources */,
-				2E6561CD18EBB735000CF4DA /* ILDMainViewController.m in Sources */,
-				2E36DBF818ED4662001A85DF /* ILDExploreViewController.m in Sources */,
 				2E36DBFC18ED4684001A85DF /* ILDExploreRootViewController.m in Sources */,
-				2E36DC0018ED4765001A85DF /* ILDNotificationViewController.m in Sources */,
 				2E6561D918EBB90B000CF4DA /* BaseViewController.m in Sources */,
 				2E3BE5EA18EE414D001E4EAA /* ILDLoginViewController.m in Sources */,
 				2E65619518EBB253000CF4DA /* ILDAppDelegate.m in Sources */,
@@ -712,10 +681,7 @@
 				2E36DBF218ED0C64001A85DF /* ILDDogViewCell.m in Sources */,
 				2E6561D518EBB7C5000CF4DA /* ILDHomeRootViewController.m in Sources */,
 				2E6561EA18EBBE2E000CF4DA /* ILDProfileRootViewController.m in Sources */,
-				2E6561E618EBBE12000CF4DA /* ILDProfileViewController.m in Sources */,
-				2E6561D118EBB7A3000CF4DA /* ILDHomeViewController.m in Sources */,
 				2E36DBDD18ECEDF9001A85DF /* BaseTableViewCell.m in Sources */,
-				2E6561DE18EBBD63000CF4DA /* ILDPostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

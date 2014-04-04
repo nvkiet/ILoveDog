@@ -13,4 +13,14 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (strong, nonatomic) UITabBarController *tabbarController;
+@property (strong, nonatomic) UINavigationController *navController;
+
++ (ILDAppDelegate*)shareDelegate;
+
+- (void)showLoginScreen;
+- (void)showHomeScreen;
+
+- (void)logOut;
+
 @end

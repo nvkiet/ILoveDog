@@ -7,7 +7,7 @@
 //
 
 #import "ILDLoginViewController.h"
-#import "ILDMainViewController.h"
+
 
 @interface ILDLoginViewController ()
 
@@ -43,8 +43,6 @@
     [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
         [_activityIndicator stopAnimating]; // Hide loading indicator
         if (!user) {
-            [self presentViewController:[[ILDMainViewController alloc] initWithNib] animated:NO completion:nil];
-            return;
             if (!error) {
                 NSLog(@"Uh oh. The user cancelled the Facebook login.");
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Log In Error" message:@"Uh oh. The user cancelled the Facebook login." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Dismiss", nil];
@@ -58,11 +56,11 @@
         }
         else if (user.isNew) {
             NSLog(@"User with facebook signed up and logged in!");
-            [self presentViewController:[[ILDMainViewController alloc] initWithNib] animated:NO completion:nil];
+            [[ILDAppDelegate shareDelegate] showHomeScreen];
         }
         else {
             NSLog(@"User with facebook logged in!");
-            [self presentViewController:[[ILDMainViewController alloc] initWithNib] animated:NO completion:nil];
+            [[ILDAppDelegate shareDelegate] showHomeScreen];
         }
     }];
     

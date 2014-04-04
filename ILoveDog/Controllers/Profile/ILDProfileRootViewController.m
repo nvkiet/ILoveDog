@@ -139,10 +139,7 @@
 
 - (void)logOutButtonClicked:(id)sender
 {
-    [PFUser logOut];
-    
-    // Back to login screen
-    [self.navigationController presentViewController:[[ILDLoginViewController alloc] initWithNib] animated:YES completion:nil];
+    [[ILDAppDelegate shareDelegate] logOut];
 }
 
 #pragma mark - Methods

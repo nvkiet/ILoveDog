@@ -7,10 +7,27 @@
 //
 
 #import "ILDAppDelegate.h"
-#import "ILDMainViewController.h"
 #import "ILDLoginViewController.h"
+#import "ILDRootViewController.h"
 
 
+#import "ILDHomeRootViewController.h"
+#import "ILDExploreRootViewController.h"
+#import "ILDPostRootViewController.h"
+#import "ILDNotificaionRootViewController.h"
+#import "ILDProfileRootViewController.h"
+
+@interface ILDAppDelegate()
+
+@property (nonatomic, strong) ILDRootViewController *rootVC;
+
+@property (nonatomic, strong) ILDHomeRootViewController *homeRootVC;
+@property (nonatomic, strong) ILDExploreRootViewController *exploreRootVC;
+@property (nonatomic, strong) ILDPostRootViewController *postRootViewVC;
+@property (nonatomic, strong) ILDNotificaionRootViewController *notificationRootVC;
+@property (nonatomic, strong) ILDProfileRootViewController *profileVC;
+
+@end
 
 @implementation ILDAppDelegate
 
@@ -28,18 +45,63 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    UIViewController *rootVC = nil;
-    if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
-        rootVC = [[ILDMainViewController alloc] initWithNib];
-    }
-    else {
-        rootVC = [[ILDLoginViewController alloc] initWithNib];
-    }
+    self.rootVC = [[ILDRootViewController alloc] init];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:self.rootVC];
     
-    self.window.rootViewController = rootVC;
+    self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
++ (ILDAppDelegate*)shareDelegate
+{
+    return (ILDAppDelegate*)[[UIApplication sharedApplication] delegate];
+}
+
+- (void)showLoginScreen
+{
+    [self.rootVC presentViewController: [[ILDLoginViewController alloc] initWithNib] animated:NO completion:nil];
+}
+
+- (void)showHomeScreen
+{
+    self.tabbarController = [[UITabBarController alloc] init];
+    
+    self.homeRootVC = [[ILDHomeRootViewController alloc] initWithNib];
+    UINavigationController *homeVC =  [[UINavigationController alloc] initWithRootViewController:self.homeRootVC];
+    
+    self.exploreRootVC = [[ILDExploreRootViewController alloc] initWithNib];
+    UINavigationController *exploreVC =  [[UINavigationController alloc] initWithRootViewController:self.exploreRootVC];
+    
+    self.postRootViewVC = [[ILDPostRootViewController alloc] initWithNib];
+    UINavigationController *postViewVC =  [[UINavigationController alloc] initWithRootViewController:self.postRootViewVC];
+    
+    self.notificationRootVC = [[ILDNotificaionRootViewController alloc] initWithNib];
+    UINavigationController *notificationVC =  [[UINavigationController alloc] initWithRootViewController:self.notificationRootVC];
+    
+    self.profileVC = [[ILDProfileRootViewController alloc] initWithNib];
+    UINavigationController *profileVC =  [[UINavigationController alloc] initWithRootViewController:self.profileVC];
+    
+    
+    self.tabbarController.viewControllers = @ [ homeVC, exploreVC, postViewVC, notificationVC, profileVC];
+    
+    [[self.tabbarController.tabBar.items objectAtIndex:0] setTitle:@"Home"];
+    [[self.tabbarController.tabBar.items objectAtIndex:1] setTitle:@"Explore"];
+    [[self.tabbarController.tabBar.items objectAtIndex:2] setTitle:@"Post"];
+    [[self.tabbarController.tabBar.items objectAtIndex:3] setTitle:@"Notification"];
+    [[self.tabbarController.tabBar.items objectAtIndex:4] setTitle:@"Profile"];
+    
+    [self.navController setViewControllers:@[ self.rootVC, self.tabbarController ] animated:NO];
+}
+
+- (void)logOut
+{
+    [PFUser logOut];
+    
+    [self.navController popToRootViewControllerAnimated:NO];
+    
+    [self showLoginScreen];
 }
 
 - (void)setupAppearance
