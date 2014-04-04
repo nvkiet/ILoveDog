@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ILDProfileRootViewController : BaseViewController
+@interface ILDProfileRootViewController : BaseViewController<NSURLConnectionDelegate>
 
 @end

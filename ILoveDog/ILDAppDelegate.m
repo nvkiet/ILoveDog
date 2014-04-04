@@ -10,6 +10,8 @@
 #import "ILDMainViewController.h"
 #import "ILDLoginViewController.h"
 
+
+
 @implementation ILDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -33,7 +35,7 @@
     else {
         rootVC = [[ILDLoginViewController alloc] initWithNib];
     }
-
+    
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
     
@@ -55,7 +57,6 @@
                                                             NSFontAttributeName: [UIFont fontWithName:FONT_HELVETICAL_REGULAR size:18.0f]
                                                         }];
 }
-
 
 // App switching methods to support Facebook Single Sign-On.
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
