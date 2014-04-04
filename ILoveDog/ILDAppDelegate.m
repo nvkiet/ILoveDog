@@ -7,14 +7,13 @@
 //
 
 #import "ILDAppDelegate.h"
-
+#import "ILDMainViewController.h"
+#import "ILDLoginViewController.h"
 
 @implementation ILDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
     // Register to use Parse Server
     [Parse setApplicationId:@"FSSQUbrtVnAOzoP1v8D6TR8qeyglIXdc6ceNQbWO"
                   clientKey:@"jjbXAWMlot8CW4WZMbS3I4XaHIyq5rOv91NsYiMm"];
@@ -25,8 +24,17 @@
     
     [self setupAppearance];
     
-    self.splashScreenVC = [[ILDSplashScreenViewController alloc] initWithNib];
-    self.window.rootViewController = self.splashScreenVC;
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    UIViewController *rootVC = nil;
+    if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
+        rootVC = [[ILDMainViewController alloc] initWithNib];
+    }
+    else {
+        rootVC = [[ILDLoginViewController alloc] initWithNib];
+    }
+
+    self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
     
     return YES;

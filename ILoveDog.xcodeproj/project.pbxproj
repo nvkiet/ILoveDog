@@ -66,8 +66,6 @@
 		2E65624D18EC1D1C000CF4DA /* navi_bar_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E65624C18EC1D1C000CF4DA /* navi_bar_full.png */; };
 		55CE2855344D4B28843B4B21 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 853A739FA735453095AFB856 /* libPods.a */; };
 		E5C1132C18EC462B0084E3F9 /* ILDProfileRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5C1132B18EC462B0084E3F9 /* ILDProfileRootViewController.xib */; };
-		E5C1133018EC4CD30084E3F9 /* ILDSplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C1132E18EC4CD30084E3F9 /* ILDSplashScreenViewController.m */; };
-		E5C1133118EC4CD30084E3F9 /* ILDSplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5C1132F18EC4CD30084E3F9 /* ILDSplashScreenViewController.xib */; };
 		E5C1133E18EC5CAA0084E3F9 /* ILDListLikersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C1133C18EC5CAA0084E3F9 /* ILDListLikersViewController.m */; };
 		E5C1133F18EC5CAA0084E3F9 /* ILDListLikersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5C1133D18EC5CAA0084E3F9 /* ILDListLikersViewController.xib */; };
 /* End PBXBuildFile section */
@@ -162,9 +160,6 @@
 		44F4F2344EA341C79C44C9AE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		853A739FA735453095AFB856 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C1132B18EC462B0084E3F9 /* ILDProfileRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDProfileRootViewController.xib; sourceTree = "<group>"; };
-		E5C1132D18EC4CD30084E3F9 /* ILDSplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDSplashScreenViewController.h; sourceTree = "<group>"; };
-		E5C1132E18EC4CD30084E3F9 /* ILDSplashScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDSplashScreenViewController.m; sourceTree = "<group>"; };
-		E5C1132F18EC4CD30084E3F9 /* ILDSplashScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDSplashScreenViewController.xib; sourceTree = "<group>"; };
 		E5C1133B18EC5CAA0084E3F9 /* ILDListLikersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDListLikersViewController.h; sourceTree = "<group>"; };
 		E5C1133C18EC5CAA0084E3F9 /* ILDListLikersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDListLikersViewController.m; sourceTree = "<group>"; };
 		E5C1133D18EC5CAA0084E3F9 /* ILDListLikersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDListLikersViewController.xib; sourceTree = "<group>"; };
@@ -388,7 +383,6 @@
 				2E6561C918EBB719000CF4DA /* Main */,
 				2E3BE5E618EE414D001E4EAA /* Login */,
 				2E6561C718EBB524000CF4DA /* Tutorial */,
-				2E6561F518EBF531000CF4DA /* Splash */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -540,17 +534,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		2E6561F518EBF531000CF4DA /* Splash */ = {
-			isa = PBXGroup;
-			children = (
-				E5C1132D18EC4CD30084E3F9 /* ILDSplashScreenViewController.h */,
-				E5C1132E18EC4CD30084E3F9 /* ILDSplashScreenViewController.m */,
-				E5C1132F18EC4CD30084E3F9 /* ILDSplashScreenViewController.xib */,
-			);
-			name = Splash;
-			path = ILoveDog/Controllers/Splash;
-			sourceTree = SOURCE_ROOT;
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -633,7 +616,6 @@
 				2E3BE5F318EE4CD8001E4EAA /* background_login.png in Resources */,
 				2E65624418EC19F2000CF4DA /* post_tabbar@2x.png in Resources */,
 				2E36DBEC18ECFAF9001A85DF /* anonymousUser@2x.png in Resources */,
-				E5C1133118EC4CD30084E3F9 /* ILDSplashScreenViewController.xib in Resources */,
 				2E3BE5F918EE5393001E4EAA /* Default.png in Resources */,
 				2E65624A18EC1BC4000CF4DA /* tabbar.png in Resources */,
 				2E36DC3118ED6A5A001A85DF /* bt_facebook_onpress@2x.png in Resources */,
@@ -718,7 +700,6 @@
 			files = (
 				2E6561E218EBBDA6000CF4DA /* ILDPostRootViewController.m in Sources */,
 				2E6561CD18EBB735000CF4DA /* ILDMainViewController.m in Sources */,
-				E5C1133018EC4CD30084E3F9 /* ILDSplashScreenViewController.m in Sources */,
 				2E36DBF818ED4662001A85DF /* ILDExploreViewController.m in Sources */,
 				2E36DBFC18ED4684001A85DF /* ILDExploreRootViewController.m in Sources */,
 				2E36DC0018ED4765001A85DF /* ILDNotificationViewController.m in Sources */,
