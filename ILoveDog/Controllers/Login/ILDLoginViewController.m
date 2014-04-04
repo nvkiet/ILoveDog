@@ -42,9 +42,7 @@
     // Login PFUser using facebook
     [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
         [_activityIndicator stopAnimating]; // Hide loading indicator
-    
         if (!user) {
-            
             [self presentViewController:[[ILDMainViewController alloc] initWithNib] animated:NO completion:nil];
             return;
             if (!error) {
