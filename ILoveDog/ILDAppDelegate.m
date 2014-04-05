@@ -66,6 +66,8 @@
 
 - (void)showHomeScreen
 {
+    //[self.navController popToRootViewControllerAnimated:NO];
+    
     self.tabbarController = [[UITabBarController alloc] init];
     
     self.homeRootVC = [[ILDHomeRootViewController alloc] initWithNib];
@@ -83,7 +85,6 @@
     self.profileVC = [[ILDProfileRootViewController alloc] initWithNib];
     UINavigationController *profileVC =  [[UINavigationController alloc] initWithRootViewController:self.profileVC];
     
-    
     self.tabbarController.viewControllers = @ [ homeVC, exploreVC, postViewVC, notificationVC, profileVC];
     
     [[self.tabbarController.tabBar.items objectAtIndex:0] setTitle:@"Home"];
@@ -92,7 +93,9 @@
     [[self.tabbarController.tabBar.items objectAtIndex:3] setTitle:@"Notification"];
     [[self.tabbarController.tabBar.items objectAtIndex:4] setTitle:@"Profile"];
     
-    [self.navController setViewControllers:@[ self.rootVC, self.tabbarController ] animated:NO];
+    [self.rootVC presentViewController: self.tabbarController animated:NO completion:nil];
+    
+    //[self.navController setViewControllers:@[ self.rootVC, self.tabbarController ] animated:NO];
 }
 
 - (void)logOut

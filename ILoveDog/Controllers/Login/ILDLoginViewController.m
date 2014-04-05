@@ -56,10 +56,12 @@
         }
         else if (user.isNew) {
             NSLog(@"User with facebook signed up and logged in!");
+            [self dismissViewControllerAnimated:NO completion:nil];
             [[ILDAppDelegate shareDelegate] showHomeScreen];
         }
         else {
             NSLog(@"User with facebook logged in!");
+            [self dismissViewControllerAnimated:NO completion:nil];
             [[ILDAppDelegate shareDelegate] showHomeScreen];
         }
     }];

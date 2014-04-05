@@ -32,14 +32,14 @@
 {
     [super viewWillAppear:animated];
     
-    [[ILDAppDelegate shareDelegate] showHomeScreen];
+    //[[ILDAppDelegate shareDelegate] showHomeScreen];
     
-//    if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
-//        [[ILDAppDelegate shareDelegate] showHomeScreen];
-//    }
-//    else {
-//        [[ILDAppDelegate shareDelegate] showLoginScreen];
-//    }
+    if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
+        [[ILDAppDelegate shareDelegate] showHomeScreen];
+    }
+    else {
+        [[ILDAppDelegate shareDelegate] showLoginScreen];
+    }
 }
 
 - (void)didReceiveMemoryWarning
