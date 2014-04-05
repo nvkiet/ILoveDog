@@ -801,7 +801,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/kietnguyen/Desktop/ilovedog,
+					"/Users/kietnguyen/Desktop/ilovedog/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ILoveDog/ILoveDog-Prefix.pch";
@@ -817,7 +817,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/kietnguyen/Desktop/ilovedog,
+					"/Users/kietnguyen/Desktop/ilovedog/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ILoveDog/ILoveDog-Prefix.pch";

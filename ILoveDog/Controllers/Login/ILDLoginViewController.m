@@ -13,7 +13,6 @@
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
-
 @end
 
 @implementation ILDLoginViewController
@@ -32,7 +31,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
-
 
 - (IBAction)loginClicked:(id)sender
 {
@@ -57,12 +55,10 @@
         else if (user.isNew) {
             NSLog(@"User with facebook signed up and logged in!");
             [self dismissViewControllerAnimated:NO completion:nil];
-            [[ILDAppDelegate shareDelegate] showHomeScreen];
         }
         else {
             NSLog(@"User with facebook logged in!");
             [self dismissViewControllerAnimated:NO completion:nil];
-            [[ILDAppDelegate shareDelegate] showHomeScreen];
         }
     }];
     

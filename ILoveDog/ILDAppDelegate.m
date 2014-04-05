@@ -61,13 +61,11 @@
 
 - (void)showLoginScreen
 {
-    [self.rootVC presentViewController: [[ILDLoginViewController alloc] initWithNib] animated:NO completion:nil];
+    [self.rootVC presentViewController: [[ILDLoginViewController alloc] initWithNib] animated:YES completion:nil];
 }
 
 - (void)showHomeScreen
 {
-    //[self.navController popToRootViewControllerAnimated:NO];
-    
     self.tabbarController = [[UITabBarController alloc] init];
     
     self.homeRootVC = [[ILDHomeRootViewController alloc] initWithNib];
@@ -102,9 +100,11 @@
 {
     [PFUser logOut];
     
-    [self.navController popToRootViewControllerAnimated:NO];
-    
-    [self showLoginScreen];
+    self.homeRootVC = nil;
+    self.exploreRootVC = nil;
+    self.postRootViewVC = nil;
+    self.notificationRootVC = nil;
+    self.profileVC = nil;
 }
 
 - (void)setupAppearance

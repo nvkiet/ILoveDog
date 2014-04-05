@@ -26,14 +26,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Set background image
+    UIImageView *backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Default.png"]];
+    backgroundImageView.frame = self.view.frame;
+    
+    [self.view addSubview:backgroundImageView];
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
-    
-    //[[ILDAppDelegate shareDelegate] showHomeScreen];
-    
+    // Check If User logined and wheather user's account linked to facebook
     if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
         [[ILDAppDelegate shareDelegate] showHomeScreen];
     }

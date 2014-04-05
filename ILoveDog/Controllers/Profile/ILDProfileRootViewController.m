@@ -44,7 +44,7 @@
     if ([PFUser currentUser]) {
         [self updateProfile];
     }
-         
+    
     FBRequest *request = [FBRequest requestForMe];
     [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
         if (!error) {
@@ -87,7 +87,7 @@
         }
         else if ([[[[error userInfo] objectForKey:@"error"] objectForKey:@"type"] isEqualToString:@"OAuthException"]){
             NSLog(@"The facebook session was invalidated");
-            [self logOutButtonClicked:nil];
+            [[ILDAppDelegate shareDelegate] logOut];
         }
         else {
             NSLog(@"Some other error: %@", error);
@@ -139,7 +139,7 @@
 
 - (void)logOutButtonClicked:(id)sender
 {
-    [[ILDAppDelegate shareDelegate] logOut];
+    [[[UIAlertView alloc] initWithTitle:nil message:@"Are you sure?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Log Out", nil] show];
 }
 
 #pragma mark - Methods
@@ -164,7 +164,16 @@
     }
 }
 
-         
+#pragma mark - Alertview delegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        [[ILDAppDelegate shareDelegate] logOut];
+        
+        [self dismissViewControllerAnimated:NO completion:nil];
+    }
+}
 
 - (void)didReceiveMemoryWarning
 {
