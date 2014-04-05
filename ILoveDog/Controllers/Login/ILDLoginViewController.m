@@ -43,12 +43,12 @@
         if (!user) {
             if (!error) {
                 NSLog(@"Uh oh. The user cancelled the Facebook login.");
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Log In Error" message:@"Uh oh. The user cancelled the Facebook login." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Dismiss", nil];
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Facebooke Login Failed" message:@"Make sure you've allowed ILoveDogs to use Facebook in iOS Settings > Privacy > Facebook." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
                 [alert show];
             }
             else {
                 NSLog(@"Uh oh. An error occurred: %@", error);
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Log In Error" message:[error description] delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Dismiss", nil];
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Facebooke Login Failed" message:@"The Internet connection appears to be offline." delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
                 [alert show];
             }
         }

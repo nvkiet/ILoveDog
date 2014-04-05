@@ -80,6 +80,7 @@
                 userProfile[@"pictureURL"] = [pictureURL absoluteString];
             }
             
+            // Save user data
             [[PFUser currentUser] setObject:userProfile forKey:@"profile"];
             [[PFUser currentUser] saveInBackground];
             

@@ -36,7 +36,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    // Check If User logined and wheather user's account linked to facebook
+    // Check If User is cached and wheather user's account linked to facebook
     if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
         [[ILDAppDelegate shareDelegate] showHomeScreen];
     }
