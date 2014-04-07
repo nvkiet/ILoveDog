@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E28DFCC18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E28DFCA18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.m */; };
+		2E28DFCD18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E28DFCB18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.xib */; };
 		2E36DBDD18ECEDF9001A85DF /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E36DBDC18ECEDF9001A85DF /* BaseTableViewCell.m */; };
 		2E36DBEB18ECFAF9001A85DF /* anonymousUser.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E36DBE918ECFAF9001A85DF /* anonymousUser.png */; };
 		2E36DBEC18ECFAF9001A85DF /* anonymousUser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E36DBEA18ECFAF9001A85DF /* anonymousUser@2x.png */; };
@@ -46,8 +48,6 @@
 		2E6561D518EBB7C5000CF4DA /* ILDHomeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6561D318EBB7C5000CF4DA /* ILDHomeRootViewController.m */; };
 		2E6561D618EBB7C5000CF4DA /* ILDHomeRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6561D418EBB7C5000CF4DA /* ILDHomeRootViewController.xib */; };
 		2E6561D918EBB90B000CF4DA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6561D818EBB90B000CF4DA /* BaseViewController.m */; };
-		2E6561E218EBBDA6000CF4DA /* ILDPostRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6561E018EBBDA6000CF4DA /* ILDPostRootViewController.m */; };
-		2E6561E318EBBDA6000CF4DA /* ILDPostRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6561E118EBBDA6000CF4DA /* ILDPostRootViewController.xib */; };
 		2E6561EA18EBBE2E000CF4DA /* ILDProfileRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6561E818EBBE2E000CF4DA /* ILDProfileRootViewController.m */; };
 		2E65624218EC19F2000CF4DA /* home_tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E65623C18EC19F2000CF4DA /* home_tabbar@2x.png */; };
 		2E65624318EC19F2000CF4DA /* post_tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E65623D18EC19F2000CF4DA /* post_tabbar.png */; };
@@ -75,6 +75,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E28DFC918F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDPhotoWriteCaptionViewController.h; sourceTree = "<group>"; };
+		2E28DFCA18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDPhotoWriteCaptionViewController.m; sourceTree = "<group>"; };
+		2E28DFCB18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDPhotoWriteCaptionViewController.xib; sourceTree = "<group>"; };
 		2E36DBDB18ECEDF9001A85DF /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		2E36DBDC18ECEDF9001A85DF /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		2E36DBE918ECFAF9001A85DF /* anonymousUser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anonymousUser.png; sourceTree = "<group>"; };
@@ -126,9 +129,6 @@
 		2E6561D418EBB7C5000CF4DA /* ILDHomeRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDHomeRootViewController.xib; sourceTree = "<group>"; };
 		2E6561D718EBB90B000CF4DA /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		2E6561D818EBB90B000CF4DA /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		2E6561DF18EBBDA6000CF4DA /* ILDPostRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDPostRootViewController.h; sourceTree = "<group>"; };
-		2E6561E018EBBDA6000CF4DA /* ILDPostRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDPostRootViewController.m; sourceTree = "<group>"; };
-		2E6561E118EBBDA6000CF4DA /* ILDPostRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDPostRootViewController.xib; sourceTree = "<group>"; };
 		2E6561E718EBBE2E000CF4DA /* ILDProfileRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDProfileRootViewController.h; sourceTree = "<group>"; };
 		2E6561E818EBBE2E000CF4DA /* ILDProfileRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDProfileRootViewController.m; sourceTree = "<group>"; };
 		2E65623C18EC19F2000CF4DA /* home_tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_tabbar@2x.png"; sourceTree = "<group>"; };
@@ -173,6 +173,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E28DFC818F2CAC9005841AF /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				2E28DFC918F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.h */,
+				2E28DFCA18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.m */,
+				2E28DFCB18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.xib */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
 		2E36DBE418ECFAAA001A85DF /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,7 +375,7 @@
 				2E6561BE18EBB369000CF4DA /* TemplateClass */,
 				2E6561DB18EBBCAE000CF4DA /* Profile */,
 				2E36DBF518ED45E1001A85DF /* Notificaion */,
-				2E6561DA18EBBCA7000CF4DA /* Post */,
+				2E28DFC818F2CAC9005841AF /* Photo */,
 				2E36DBF418ED45D7001A85DF /* Explore */,
 				2E6561C818EBB584000CF4DA /* Home */,
 				2E3BE5E618EE414D001E4EAA /* Login */,
@@ -468,16 +478,6 @@
 				E5C1133D18EC5CAA0084E3F9 /* ILDListLikersViewController.xib */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		2E6561DA18EBBCA7000CF4DA /* Post */ = {
-			isa = PBXGroup;
-			children = (
-				2E6561DF18EBBDA6000CF4DA /* ILDPostRootViewController.h */,
-				2E6561E018EBBDA6000CF4DA /* ILDPostRootViewController.m */,
-				2E6561E118EBBDA6000CF4DA /* ILDPostRootViewController.xib */,
-			);
-			path = Post;
 			sourceTree = "<group>";
 		};
 		2E6561DB18EBBCAE000CF4DA /* Profile */ = {
@@ -596,7 +596,6 @@
 				2E65624218EC19F2000CF4DA /* home_tabbar@2x.png in Resources */,
 				2E3BE60118EE689D001E4EAA /* AppIcon60x60@2x.png in Resources */,
 				E5C1132C18EC462B0084E3F9 /* ILDProfileRootViewController.xib in Resources */,
-				2E6561E318EBBDA6000CF4DA /* ILDPostRootViewController.xib in Resources */,
 				2E65624D18EC1D1C000CF4DA /* navi_bar_full.png in Resources */,
 				2E36DC2F18ED6A5A001A85DF /* bt_facebook_normal@2x.png in Resources */,
 				2E3BE5F218EE4CD8001E4EAA /* background_login@2x.png in Resources */,
@@ -614,6 +613,7 @@
 				2E65624718EC19F2000CF4DA /* home_tabbar.png in Resources */,
 				2E65618F18EBB253000CF4DA /* InfoPlist.strings in Resources */,
 				2E3BE5FF18EE689D001E4EAA /* AppIcon57x57.png in Resources */,
+				2E28DFCD18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.xib in Resources */,
 				2E6561D618EBB7C5000CF4DA /* ILDHomeRootViewController.xib in Resources */,
 				2E36DBFD18ED4684001A85DF /* ILDExploreRootViewController.xib in Resources */,
 				2E65624318EC19F2000CF4DA /* post_tabbar.png in Resources */,
@@ -670,7 +670,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E3BE60918EEC6A1001E4EAA /* ILDRootViewController.m in Sources */,
-				2E6561E218EBBDA6000CF4DA /* ILDPostRootViewController.m in Sources */,
 				2E36DBFC18ED4684001A85DF /* ILDExploreRootViewController.m in Sources */,
 				2E6561D918EBB90B000CF4DA /* BaseViewController.m in Sources */,
 				2E3BE5EA18EE414D001E4EAA /* ILDLoginViewController.m in Sources */,
@@ -678,6 +677,7 @@
 				2E65619118EBB253000CF4DA /* main.m in Sources */,
 				E5C1133E18EC5CAA0084E3F9 /* ILDListLikersViewController.m in Sources */,
 				2E36DC0418ED479C001A85DF /* ILDNotificaionRootViewController.m in Sources */,
+				2E28DFCC18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.m in Sources */,
 				2E36DBF218ED0C64001A85DF /* ILDDogViewCell.m in Sources */,
 				2E6561D518EBB7C5000CF4DA /* ILDHomeRootViewController.m in Sources */,
 				2E6561EA18EBBE2E000CF4DA /* ILDProfileRootViewController.m in Sources */,

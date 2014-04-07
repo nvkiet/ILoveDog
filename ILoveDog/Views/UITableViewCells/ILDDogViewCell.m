@@ -13,7 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
-@property (weak, nonatomic) IBOutlet UILabel *captionLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *dogPicImageView;
 @property (weak, nonatomic) IBOutlet UIButton *likeButton;
 @property (weak, nonatomic) IBOutlet UILabel *likesLabel;
@@ -47,12 +46,12 @@
 
 - (void)configureWithData:(id)model
 {
-    
+    // Filling data for cell
 }
 
 + (CGFloat)getHeight
 {
-    return 400;
+    return 375;
 }
 
 

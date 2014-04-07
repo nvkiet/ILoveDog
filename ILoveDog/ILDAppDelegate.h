@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ILDAppDelegate : UIResponder <UIApplicationDelegate>
+@interface ILDAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate, UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
@@ -22,5 +22,4 @@
 - (void)showHomeScreen;
 
 - (void)logOut;
-
 @end

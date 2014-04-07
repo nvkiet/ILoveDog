@@ -13,9 +13,11 @@
 
 #import "ILDHomeRootViewController.h"
 #import "ILDExploreRootViewController.h"
-#import "ILDPostRootViewController.h"
 #import "ILDNotificaionRootViewController.h"
 #import "ILDProfileRootViewController.h"
+#import "ILDPhotoWriteCaptionViewController.h"
+
+#define POST_TABBAR_ITEM 2
 
 @interface ILDAppDelegate()
 
@@ -23,10 +25,10 @@
 
 @property (nonatomic, strong) ILDHomeRootViewController *homeRootVC;
 @property (nonatomic, strong) ILDExploreRootViewController *exploreRootVC;
-@property (nonatomic, strong) ILDPostRootViewController *postRootViewVC;
 @property (nonatomic, strong) ILDNotificaionRootViewController *notificationRootVC;
 @property (nonatomic, strong) ILDProfileRootViewController *profileVC;
 
+@property (nonatomic) int prevTabBarIndex;
 @end
 
 @implementation ILDAppDelegate
@@ -68,33 +70,49 @@
 - (void)showHomeScreen
 {
     self.tabbarController = [[UITabBarController alloc] init];
+    self.tabbarController.delegate = self;
     
     self.homeRootVC = [[ILDHomeRootViewController alloc] initWithNib];
-    UINavigationController *homeVC =  [[UINavigationController alloc] initWithRootViewController:self.homeRootVC];
+    UINavigationController *homeNC =  [[UINavigationController alloc] initWithRootViewController:self.homeRootVC];
     
     self.exploreRootVC = [[ILDExploreRootViewController alloc] initWithNib];
-    UINavigationController *exploreVC =  [[UINavigationController alloc] initWithRootViewController:self.exploreRootVC];
-    
-    self.postRootViewVC = [[ILDPostRootViewController alloc] initWithNib];
-    UINavigationController *postViewVC =  [[UINavigationController alloc] initWithRootViewController:self.postRootViewVC];
+    UINavigationController *exploreNC =  [[UINavigationController alloc] initWithRootViewController:self.exploreRootVC];
+
+    UINavigationController *postViewNC =  [[UINavigationController alloc] init];
     
     self.notificationRootVC = [[ILDNotificaionRootViewController alloc] initWithNib];
-    UINavigationController *notificationVC =  [[UINavigationController alloc] initWithRootViewController:self.notificationRootVC];
+    UINavigationController *notificationNC =  [[UINavigationController alloc] initWithRootViewController:self.notificationRootVC];
     
     self.profileVC = [[ILDProfileRootViewController alloc] initWithNib];
-    UINavigationController *profileVC =  [[UINavigationController alloc] initWithRootViewController:self.profileVC];
+    UINavigationController *profileNC =  [[UINavigationController alloc] initWithRootViewController:self.profileVC];
     
-    self.tabbarController.viewControllers = @ [ homeVC, exploreVC, postViewVC, notificationVC, profileVC];
+    self.tabbarController.viewControllers = @ [ homeNC, exploreNC, postViewNC, notificationNC, profileNC];
     
     [[self.tabbarController.tabBar.items objectAtIndex:0] setTitle:@"Home"];
     [[self.tabbarController.tabBar.items objectAtIndex:1] setTitle:@"Explore"];
-    [[self.tabbarController.tabBar.items objectAtIndex:2] setTitle:@"Post"];
+    UITabBarItem *postTabBar = [self.tabbarController.tabBar.items objectAtIndex:2];
+    //[postTabBar setTitle:@"Post"];
+    postTabBar.tag = POST_TABBAR_ITEM;
     [[self.tabbarController.tabBar.items objectAtIndex:3] setTitle:@"Notification"];
     [[self.tabbarController.tabBar.items objectAtIndex:4] setTitle:@"Profile"];
     
     [self.rootVC presentViewController: self.tabbarController animated:NO completion:nil];
     
-    //[self.navController setViewControllers:@[ self.rootVC, self.tabbarController ] animated:NO];
+    UIButton *cameraButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [cameraButton setTitle:@"Camera" forState:UIControlStateNormal];
+//    [cameraButton setImage:[UIImage imageNamed:@"ButtonCamera.png"] forState:UIControlStateNormal];
+//    [cameraButton setImage:[UIImage imageNamed:@"ButtonCameraSelected.png"] forState:UIControlStateHighlighted];
+    cameraButton.frame = CGRectMake(129.0f, 0.0f, 64.0f, self.tabbarController.tabBar.bounds.size.height);
+    [cameraButton addTarget:self action:@selector(photoCaptureButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.tabbarController.tabBar addSubview:cameraButton];
+}
+
+#pragma mark - Actions
+
+- (void)photoCaptureButtonClicked:(id)sender
+{
+    UIActionSheet *photoActionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Take Photo" otherButtonTitles:@"Choose Photo", nil];
+    [photoActionSheet showFromTabBar:self.tabbarController.tabBar];
 }
 
 - (void)logOut
@@ -103,9 +121,78 @@
     
     self.homeRootVC = nil;
     self.exploreRootVC = nil;
-    self.postRootViewVC = nil;
     self.notificationRootVC = nil;
     self.profileVC = nil;
+}
+
+#pragma mark - UITabBarControllerDelegate
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+    if (viewController.tabBarItem.tag == POST_TABBAR_ITEM){
+        return NO;
+    }
+    return YES;
+}
+
+#pragma mark - UIActionSheetDelegate
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    switch (buttonIndex) {
+        case 0:
+            // Take picture
+            [self takePhoto];
+            break;
+        case 1:
+            // Choose picture
+            [self choosePhoto];
+            break;
+        default:
+            break;
+    }
+}
+- (void)takePhoto
+{
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+        imagePickerController.delegate = self;
+        imagePickerController.allowsEditing = YES;
+        imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+        
+        [self.tabbarController presentViewController:imagePickerController animated:YES completion:nil];
+    }
+    else{
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Take Photo Failed" message:@"Device has no camera." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
+}
+
+- (void)choosePhoto
+{
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    imagePickerController.delegate = self;
+    imagePickerController.allowsEditing = YES;
+    imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self.tabbarController presentViewController:imagePickerController animated:YES completion:nil];
+}
+
+#pragma mark - UIImagePickerControllerDelegate
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    [picker dismissViewControllerAnimated:YES completion:^{
+        UIImage *image = info[UIImagePickerControllerEditedImage];
+        ILDPhotoWriteCaptionViewController *photoWriteCaptionVC = [[ILDPhotoWriteCaptionViewController alloc] initWithNib];
+        photoWriteCaptionVC.photoImage = image;
+        [self.tabbarController presentViewController:photoWriteCaptionVC animated:YES completion:nil];
+    }];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)setupAppearance
@@ -123,6 +210,8 @@
                                                             NSFontAttributeName: [UIFont fontWithName:FONT_HELVETICAL_REGULAR size:18.0f]
                                                         }];
 }
+
+
 
 // App switching methods to support Facebook Single Sign-On.
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
