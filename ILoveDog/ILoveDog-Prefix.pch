@@ -31,3 +31,32 @@
 // ViewControllers
 #import "ILDAppDelegate.h"
 
+#pragma mark - User Info Keys
+
+#define USER_INFO_LIKED_KEY @"liked"
+#define USER_INFO_COMMENT_KEY @"comment"
+
+// Photo Class
+#define PHOTO_CLASS_KEY @"Photo"
+
+// Fields key
+#define PHOTO_IMAGE_KEY @"image"
+#define PHOTO_THUMBNAIL_KEY @"thumbnail"
+#define PHOTO_USER_KEY @"User"
+#define PHOTO_OPEN_GRAPH_ID_KEY @"fbOpenGraphID"
+
+// Activity class
+#define ACTIVITY_CLASS_KEY @"Activity"
+
+// Fields key
+#define ACTIVITY_TYPE_KEY @"Type"
+#define ACTIVITY_FROM_USER_KEY @"fromUser"
+#define ACTIVITY_TO_USER_KEY @"toUser"
+#define ACTIVITY_CONTENT_KEY @"content"
+#define ACTIVITY_PHOTO_KEY @"photo"
+
+// Type values
+#define ACTIVITY_TYPE_LIKE @"like"
+#define ACTIVITY_TYPE_COMMENT @"comment"
+#define ACTIVITY_TYPE_FOLLOW @"follow"
+#define ACTIVITY_TYPE_JOINED @"joined"

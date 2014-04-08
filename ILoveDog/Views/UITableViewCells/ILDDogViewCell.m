@@ -18,7 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *likesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *commentsLabel;
 
-
 @end
 
 @implementation ILDDogViewCell
@@ -51,7 +50,7 @@
 
 + (CGFloat)getHeight
 {
-    return 375;
+    return 402;
 }
 
 

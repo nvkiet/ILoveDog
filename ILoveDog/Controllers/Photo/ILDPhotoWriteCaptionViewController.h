@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface ILDPhotoWriteCaptionViewController : BaseViewController
+@interface ILDPhotoWriteCaptionViewController : BaseViewController <UITextFieldDelegate>
 @property (nonatomic, strong) UIImage *photoImage;
 @end

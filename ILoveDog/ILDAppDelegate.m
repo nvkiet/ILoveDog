@@ -186,6 +186,7 @@
         UIImage *image = info[UIImagePickerControllerEditedImage];
         ILDPhotoWriteCaptionViewController *photoWriteCaptionVC = [[ILDPhotoWriteCaptionViewController alloc] initWithNib];
         photoWriteCaptionVC.photoImage = image;
+        
         [self.tabbarController presentViewController:photoWriteCaptionVC animated:YES completion:nil];
     }];
 }

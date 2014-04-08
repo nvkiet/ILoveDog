@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E230C2B18F37A5B006C509F /* dog_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E230C2A18F37A5B006C509F /* dog_photo.jpg */; };
+		2E230C3118F3A1A9006C509F /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E230C3018F3A1A9006C509F /* UIImage+ResizeAdditions.m */; };
+		2E230C3618F3AA71006C509F /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E230C3318F3AA71006C509F /* UIImage+AlphaAdditions.m */; };
+		2E230C3718F3AA71006C509F /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E230C3518F3AA71006C509F /* UIImage+RoundedCornerAdditions.m */; };
 		2E28DFCC18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E28DFCA18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.m */; };
 		2E28DFCD18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E28DFCB18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.xib */; };
 		2E36DBDD18ECEDF9001A85DF /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E36DBDC18ECEDF9001A85DF /* BaseTableViewCell.m */; };
@@ -75,6 +79,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E230C2A18F37A5B006C509F /* dog_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog_photo.jpg; sourceTree = "<group>"; };
+		2E230C2F18F3A1A9006C509F /* UIImage+ResizeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeAdditions.h"; sourceTree = "<group>"; };
+		2E230C3018F3A1A9006C509F /* UIImage+ResizeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeAdditions.m"; sourceTree = "<group>"; };
+		2E230C3218F3AA71006C509F /* UIImage+AlphaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AlphaAdditions.h"; sourceTree = "<group>"; };
+		2E230C3318F3AA71006C509F /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AlphaAdditions.m"; sourceTree = "<group>"; };
+		2E230C3418F3AA71006C509F /* UIImage+RoundedCornerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCornerAdditions.h"; sourceTree = "<group>"; };
+		2E230C3518F3AA71006C509F /* UIImage+RoundedCornerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCornerAdditions.m"; sourceTree = "<group>"; };
 		2E28DFC918F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILDPhotoWriteCaptionViewController.h; sourceTree = "<group>"; };
 		2E28DFCA18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILDPhotoWriteCaptionViewController.m; sourceTree = "<group>"; };
 		2E28DFCB18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILDPhotoWriteCaptionViewController.xib; sourceTree = "<group>"; };
@@ -173,6 +184,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E230C2E18F3A191006C509F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2E230C2F18F3A1A9006C509F /* UIImage+ResizeAdditions.h */,
+				2E230C3018F3A1A9006C509F /* UIImage+ResizeAdditions.m */,
+				2E230C3218F3AA71006C509F /* UIImage+AlphaAdditions.h */,
+				2E230C3318F3AA71006C509F /* UIImage+AlphaAdditions.m */,
+				2E230C3418F3AA71006C509F /* UIImage+RoundedCornerAdditions.h */,
+				2E230C3518F3AA71006C509F /* UIImage+RoundedCornerAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		2E28DFC818F2CAC9005841AF /* Photo */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +210,7 @@
 		2E36DBE418ECFAAA001A85DF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2E230C2A18F37A5B006C509F /* dog_photo.jpg */,
 				2E36DBE918ECFAF9001A85DF /* anonymousUser.png */,
 				2E36DBEA18ECFAF9001A85DF /* anonymousUser@2x.png */,
 			);
@@ -323,8 +348,7 @@
 				2E36DBED18ED0C64001A85DF /* Views */,
 				2E6561BC18EBB2E5000CF4DA /* Controllers */,
 				2E6561BD18EBB2EE000CF4DA /* Managers */,
-				2E6561C018EBB3AB000CF4DA /* Categories */,
-				2E6561C418EBB417000CF4DA /* Vendors */,
+				2E230C2E18F3A191006C509F /* Categories */,
 				2E6561C118EBB3C5000CF4DA /* Resources */,
 				2E65619C18EBB253000CF4DA /* Images.xcassets */,
 				2E65618B18EBB253000CF4DA /* Supporting Files */,
@@ -411,13 +435,6 @@
 			path = SuperClass;
 			sourceTree = "<group>";
 		};
-		2E6561C018EBB3AB000CF4DA /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
 		2E6561C118EBB3C5000CF4DA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -444,13 +461,6 @@
 				2E3BE5FB18EE689D001E4EAA /* Logo */,
 			);
 			path = Images;
-			sourceTree = "<group>";
-		};
-		2E6561C418EBB417000CF4DA /* Vendors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendors;
 			sourceTree = "<group>";
 		};
 		2E6561C518EBB4B1000CF4DA /* SuperClass */ = {
@@ -598,6 +608,7 @@
 				E5C1132C18EC462B0084E3F9 /* ILDProfileRootViewController.xib in Resources */,
 				2E65624D18EC1D1C000CF4DA /* navi_bar_full.png in Resources */,
 				2E36DC2F18ED6A5A001A85DF /* bt_facebook_normal@2x.png in Resources */,
+				2E230C2B18F37A5B006C509F /* dog_photo.jpg in Resources */,
 				2E3BE5F218EE4CD8001E4EAA /* background_login@2x.png in Resources */,
 				2E65624618EC19F2000CF4DA /* home_tabbar_active@2x.png in Resources */,
 				2E3BE5FA18EE5393001E4EAA /* Default@2x.png in Resources */,
@@ -669,14 +680,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E230C3718F3AA71006C509F /* UIImage+RoundedCornerAdditions.m in Sources */,
 				2E3BE60918EEC6A1001E4EAA /* ILDRootViewController.m in Sources */,
 				2E36DBFC18ED4684001A85DF /* ILDExploreRootViewController.m in Sources */,
 				2E6561D918EBB90B000CF4DA /* BaseViewController.m in Sources */,
 				2E3BE5EA18EE414D001E4EAA /* ILDLoginViewController.m in Sources */,
 				2E65619518EBB253000CF4DA /* ILDAppDelegate.m in Sources */,
+				2E230C3118F3A1A9006C509F /* UIImage+ResizeAdditions.m in Sources */,
 				2E65619118EBB253000CF4DA /* main.m in Sources */,
 				E5C1133E18EC5CAA0084E3F9 /* ILDListLikersViewController.m in Sources */,
 				2E36DC0418ED479C001A85DF /* ILDNotificaionRootViewController.m in Sources */,
+				2E230C3618F3AA71006C509F /* UIImage+AlphaAdditions.m in Sources */,
 				2E28DFCC18F2CAF3005841AF /* ILDPhotoWriteCaptionViewController.m in Sources */,
 				2E36DBF218ED0C64001A85DF /* ILDDogViewCell.m in Sources */,
 				2E6561D518EBB7C5000CF4DA /* ILDHomeRootViewController.m in Sources */,
